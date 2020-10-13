@@ -1,0 +1,205 @@
+/****************************************PRELOADER***************************************************************************/
+#loader-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: #fff;
+    text-align: center!important;
+}
+.loader{
+    margin-left: 5%;
+    margin-top: 23%;
+    width: 15%;
+    height: 10vh;
+}
+/********************************************HTML*********************************************************************************/
+@font-face {
+	font-family: 'Maven Pro', sans-serif;
+	font-display: auto;
+	src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+
+body, h1, h2, h3, h4, h5, h6,p {
+    font-family: 'Maven Pro', sans-serif;
+}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+* {
+    color: #777;
+}
+.mySlides {
+    display:none
+}
+.as{
+    color: #999;
+}
+
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+}
+.w3-badge {
+    height:13px;width:13px;padding:0
+}
+.text{
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1;
+}
+.textsus{
+    font-family: 'Comfortaa', cursive;
+}
+.log{
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 52px;
+    padding-bottom: 4px;
+}
+.colorText{
+    color: #24ce58;
+}
+.recolor {
+    display: inline-block;
+    position: relative;
+    background-color:rgb(34, 201, 87);
+}
+.recolor img {
+    display: block;
+    mix-blend-mode: multiply;
+    filter: grayscale(80%);
+    opacity: 0.5;
+}
+button.boton-home1 {
+	background-color: white;
+	color: #24ce58;
+    font-size: 1.3em;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+button.boton-home2 {
+    background-color: #24ce58;
+    padding-left: 26%;
+    padding-right: 26%;
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+button.boton-home3{
+    background-color: #414042;
+    border: 2px solid #fff;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 22%;
+    margin-right: -83%;
+}
+.foot{
+    background-color: #414042;
+}
+img.logo-headerFooter{
+    margin-left: -10%;
+    margin-top: 25%;
+    padding-left: 10%;
+    padding-top: 10%;
+    height: 90px;
+}
+.icono{
+    width: 40%;
+    height: 30%;
+    margin-top: -10%;
+}
+.padplanes{
+    padding-top: 90px!important;
+    padding-bottom: 75px!important;
+}  
+.img{
+    width:100%; 
+    height: 76vh;
+}
+.prin{
+    max-width: 800px;
+    margin-top: -51px;
+}
+.colorBoton{
+    background-color: #24ce58;
+    color: #fff;
+}
+.g-recaptcha {
+    margin-left: 12%;
+}
+.parr{
+    line-height: 1%;
+}
+.tit{
+    position: absolute;
+    left: 22%;
+    top: 35%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+}
+.bar{
+    height: 10vh;
+}
+.padding-large {
+    padding: 20px 24px!important;
+}
+/***************************************************************************/
+@media only screen and (max-width: 600px){
+    .loader{
+        margin-left: 0%;
+        margin-top: 86%;
+        width: 30%;
+        height: 6vh;
+    }
+    .log{
+        height: 50px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 4px;
+    }
+    button.boton-home3{
+        background-color: #414042;
+        border: 1px solid #fff;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 0%;
+        margin-right: 63%;
+    }
+    #menuFooter{
+        display: none;
+    }
+    .modCel{
+        margin-top: -9%;
+    }
+    .g-recaptcha {
+        transform: scale(0.84);
+        transform-origin: 0 0;
+        margin-left: 16%;
+    }
+    .padplanes{
+        padding-top: 90px!important;
+        padding-bottom: 75px!important;
+    }
+    .img{
+        width:100%; 
+        height: 95vh;
+    }
+    .tit{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        bottom: 225px;
+        transform: translate(-50%,-50%)
+    }
+}

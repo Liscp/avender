@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[360px], initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/avender.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+    <title>aVender</title>
+</head>
+<body>
+
+    <!--GIF-->
+    <div id="loader-wrapper">
+      <img src="images/aVender.gif" alt="Hojitas" class="loader">
+    </div>
+    <!--FIN GIF-->
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card bar">
+    <a href="#">
+        <img class="w3-button log" src="images/aVender.png" alt="Logo aVender" />
+    </a>
+    <div class="w3-right w3-hide-small">
+      <a href="#" class="w3-bar-item w3-button padding-large w3-hide-small"><b>Inicio</b></a>
+      <a href="#productos" class="w3-bar-item w3-button padding-large w3-hide-small"><b>Productos</b></a>
+      <a href="#planes" class="w3-bar-item w3-button padding-large w3-hide-small"><b>Planes</b></a>
+      <a href="#contacto" class="w3-bar-item w3-button padding-large w3-hide-small"><b>Contacto</b></a>
+      <a href="https://a-vender.com/FacturaWeb/pages/index.jsf" class="w3-bar-item w3-button padding-large w3-hide-small">
+        <b class="colorText">Ingresar  &nbsp; <i class="fa fa-user colorText"></i></b>
+      </a>
+    </div>
+    
+    <a class="w3-bar-item w3-button w3-hide-large w3-right" href="javascript:void(0)" onclick="w3_open()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" 
+  style="display:none;z-index:2;width:40%;min-width:200px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+    class="w3-bar-item w3-button">Cerrar X
+  </a>
+  <a href="#" onclick="w3_close()" class="as w3-bar-item w3-button">Inicio</a>
+  <a href="#productos" onclick="w3_close()" class="as w3-bar-item w3-button">Productos</a>
+  <a href="#planes" onclick="w3_close()" class="as w3-bar-item w3-button">Planes</a>
+  <a href="#contacto" onclick="w3_close()" class="as w3-bar-item w3-button">Contacto</a>
+  <a href="https://a-vender.com/FacturaWeb/pages/index.jsf" onclick="w3_close()" class="w3-bar-item w3-button colorText">Ingresar &nbsp;
+    <i class="fa fa-user colorText"></i></a>
+</nav>
+<!--HEADER-->
+<header class="w3-display-container">
+    <div class="mySlides recolor w3-display-container">
+      <img src="images/nuevas/nueva6.jpg" class="img" alt="Slider_1">
+      <div class="tit w3-container w3-text-white w3-padding-small">
+        <h3 class="text"><b class="w3-text-white">FACTURACIÓN LIBRE<br> DE PAPELES.</b></h3 >
+        <p class="w3-text-white text">Avender es un software de Facturación electrónica <br> que te ayuda a elaborar facturas y gestionar tus pagos <br>de manera eficiente.</p>
+
+        <button class="w3-margin-top boton-home1" onclick="window.location='cuenta.html'"><b class="colorText">Crea tu Cuenta</b></button>
+      </div>
+    </div>
+    <div class="mySlides recolor w3-display-container">
+      <img src="images/nuevas/nueva7.jpg" class="img" alt="Slider_2">
+      <div class="tit w3-container w3-text-white w3-padding-small">
+        <h3 class="text"><b class="w3-text-white">INTEGRACIÓN CON ERPS.</b></h3>
+        <p class="w3-text-white text">Si cuentas con un sistema contable o ERP,<br> Avender se integra para la emisión de <br>facturas electrónicas.</p>
+        <button class="w3-margin-top boton-home1" onclick="window.location='cuenta.html'"><b class="colorText">Crea tu Cuenta</b></button>
+      </div>
+    </div>
+    <div class="mySlides recolor w3-display-container">
+      <img src="images/nuevas/nueva11.jpg" class="img" alt="Slider_3">
+      <div class="tit w3-container w3-text-white w3-padding-small">
+        <h3 class="text"><b class="w3-text-white">ACCESO DESDE<br> CUALQUIER DISPOSITIVO <br> MÓVIL, DESKTOP.</b></h3>
+        <button class="w3-margin-top boton-home1" onclick="window.location='cuenta.html'"><b class="colorText">Crea tu Cuenta</b></button>
+      </div>
+    </div>
+    <button class="w3-btn w3-display-left w3-text-white" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-btn w3-display-right w3-text-white" onclick="plusDivs(1)">&#10095;</button>
+    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+</header>
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:0px">
+  <!--Banner-->
+  <div class="w3-container w3-content w3-center w3-light-gray" style="max-width:2000px; padding-top: 15px;
+  padding-bottom: 15px;">
+    <h2 class="w3-center">Todo lo que necesitas para manejar tus facturas y <br>pagos a un clic.</h2>
+  </div>
+  
+  <!-- PRODUCTOS -->
+  <div class="w3-container w3-content w3-center prin" id="productos">
+    
+    <div class="w3-row padplanes">
+      <div class="w3-third">
+        <img src="images/checkColor.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+        <p><b>Facturación Completa<br /> Servicios y Productos</b></p>
+      </div>
+      <div class="w3-third">
+        <img src="images/checkColor.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+        <p><b>Reportes Anuales <br /> Servicios y Productos</b></p>
+      </div>
+      <div class="w3-third">
+        <img src="images/checkColor.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:40%">
+        <p><b>Almacenamiento en <br /> Base de Datos</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLANES -->
+  <div class="w3-light-gray" id="planes">
+    
+    <div class="w3-content w3-center" style="max-width:800px">
+      <div class="w3-row padplanes">
+        <div class="w3-half">
+          <h2 class="w3-text-gray textsus"><b>Subscríbete!</b></h2>
+          <button class="w3-button boton-home2 w3-large w3-margin-top"><img src="images/check.png" class="icono" alt=""></button>
+        </div>
+        <div class="w3-half">
+          <h3><b class="colorText">Niveles de Membresía</b></h3>
+          <p><b>Entérate sobre nuestras diferentes<br /> membresias y escoje la que <br />funcione mejor con tu negocio.</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACTO -->
+  <div class="w3-center w3-container w3-content padplanes" style="max-width:800px" id="contacto">
+    <h3 class="w3-wide w3-center w3-border-bottom"><b>Contáctanos</b></h3>
+    <div class="w3-row w3-center">
+      <div class="w3-col m3 w3-white w3-center">
+        <p>&nbsp;</p>
+      </div>
+      <div class="w3-col m6 w3-center">
+        <form action="js/validacionCaptcha.php" method="POST">
+          <p>
+            <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="nombre" id="nombre">
+          </p>
+          <p>
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="email" id="email">
+          </p>
+          <p>
+            <input class="w3-input w3-border" type="text" placeholder="Titulo" required name="titulo" id="titulo">
+          </p>
+          <p>
+            <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="mensaje" id="mensaje">
+          </p>
+          <input type="hidden" id="totalmente_falso" name="secreto">
+          <div class="g-recaptcha w3-center" data-sitekey="6LeMaN4UAAAAACaN9lTtf6ZXfT91by7-MlVLXnNt"></div>
+          <p></p>
+          <button class="w3-btn w3-round-xxlarge w3-section w3-center colorBoton" type="submit" onclick="alerta(this)">Enviar Mensaje</button>
+
+          
+          
+            <div id="alerta" class="w3-modal" onclick="this.style.display='none'">
+              <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+              <div class="w3-modal-content w3-animate-zoom">
+                  <div class="w3-modal-content w3-animate-top w3-card-4">
+                      <div class="w3-panel w3-pale-green w3-bottombar w3-border-green w3-border" id="texto">
+                      </div>
+                  </div>
+              </div>
+            </div>
+      
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="foot w3-container w3-margin-top">
+  <div class="w3-row" id="menuFooter">
+    <div class="w3-text-white w3-col m5 w3-center w3-right">
+      <a href="#" class="w3-bar-item w3-button">Inicio</a>
+      <a href="#productos" class="w3-bar-item w3-button">Productos</a>
+      <a href="#planes" class="w3-bar-item w3-button">Planes</a>
+      <a href="#contacto" class="w3-bar-item w3-button">Contacto</a>
+    </div>
+  </div>
+  <div class="w3-row-padding modCel">
+    <div class="w3-third" style="margin-top: -11%;">
+      <img src="images/aVenderFooter.png" class="logo-headerFooter" alt="">
+      <p class="w3-text-white parr">info@avender.com</p>
+      <a href="tel:+59322279377" class="w3-text-white">+593(2) 2279-377 /</a>
+      <a href="tel:+593987750025" class="w3-text-white">+593(9) 8775-0025</a>
+      <p class="w3-text-white parr">Dirección: Rio Coca E5-16 e Isla Isabela.</p>
+    </div>
+    <div class="w3-third s3 w3-text-white" style="padding-bottom: 3%;">
+      <button class="w3-text-white boton-home3 w3-right w3-large" onclick="window.location='#contacto'">Subscríbete</button>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
